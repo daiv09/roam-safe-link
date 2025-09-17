@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ModeSelection from "./pages/ModeSelection";
 import Dashboard from "./pages/Dashboard";
+import GuardianPage from "./pages/Guardian";
+import InteractiveDemo from "./pages/InteractiveDashboard";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +22,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/mode-selection" element={<ModeSelection />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/guardian" element={<GuardianPage />} />
+          <Route path="/interactive" element={<InteractiveDemo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
